@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DBgestion_electionDataSet" targetNamespace="http://tempuri.org/DBgestion_electionDataSet.xsd" xmlns:mstns="http://tempuri.org/DBgestion_electionDataSet.xsd" xmlns="http://tempuri.org/DBgestion_electionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBgestion_electionConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBgestion_electionConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApplication7.Properties.Settings.GlobalReference.Default.DBgestion_electionConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View1TableAdapter" GeneratorDataComponentClassName="View1TableAdapter" Name="View1" UserDataComponentName="View1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBgestion_electionConnectionString (Settings)" DbObjectName="DBgestion_election.dbo.View1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Num_Electeur, CIN, Adresse, Nom, date_Naissance, Prenom, Sexe, Cercle_Election, Commune, Nom_Bureau_Election, Adresse_bureau, Lieux_Bureau, Province FROM dbo.View1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Num_Electeur" DataSetColumn="Num_Electeur" />
+              <Mapping SourceColumn="CIN" DataSetColumn="CIN" />
+              <Mapping SourceColumn="Adresse" DataSetColumn="Adresse" />
+              <Mapping SourceColumn="Nom" DataSetColumn="Nom" />
+              <Mapping SourceColumn="date_Naissance" DataSetColumn="date_Naissance" />
+              <Mapping SourceColumn="Prenom" DataSetColumn="Prenom" />
+              <Mapping SourceColumn="Sexe" DataSetColumn="Sexe" />
+              <Mapping SourceColumn="Cercle_Election" DataSetColumn="Cercle_Election" />
+              <Mapping SourceColumn="Commune" DataSetColumn="Commune" />
+              <Mapping SourceColumn="Nom_Bureau_Election" DataSetColumn="Nom_Bureau_Election" />
+              <Mapping SourceColumn="Adresse_bureau" DataSetColumn="Adresse_bureau" />
+              <Mapping SourceColumn="Lieux_Bureau" DataSetColumn="Lieux_Bureau" />
+              <Mapping SourceColumn="Province" DataSetColumn="Province" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DBgestion_electionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DBgestion_electionDataSet" msprop:Generator_UserDSName="DBgestion_electionDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View1" msprop:Generator_TableClassName="View1DataTable" msprop:Generator_TableVarName="tableView1" msprop:Generator_TablePropName="View1" msprop:Generator_RowDeletingName="View1RowDeleting" msprop:Generator_RowChangingName="View1RowChanging" msprop:Generator_RowEvHandlerName="View1RowChangeEventHandler" msprop:Generator_RowDeletedName="View1RowDeleted" msprop:Generator_UserTableName="View1" msprop:Generator_RowChangedName="View1RowChanged" msprop:Generator_RowEvArgName="View1RowChangeEvent" msprop:Generator_RowClassName="View1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Num_Electeur" msprop:Generator_ColumnVarNameInTable="columnNum_Electeur" msprop:Generator_ColumnPropNameInRow="Num_Electeur" msprop:Generator_ColumnPropNameInTable="Num_ElecteurColumn" msprop:Generator_UserColumnName="Num_Electeur" type="xs:int" />
+              <xs:element name="CIN" msprop:Generator_ColumnVarNameInTable="columnCIN" msprop:Generator_ColumnPropNameInRow="CIN" msprop:Generator_ColumnPropNameInTable="CINColumn" msprop:Generator_UserColumnName="CIN">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adresse" msprop:Generator_ColumnVarNameInTable="columnAdresse" msprop:Generator_ColumnPropNameInRow="Adresse" msprop:Generator_ColumnPropNameInTable="AdresseColumn" msprop:Generator_UserColumnName="Adresse" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nom" msprop:Generator_ColumnVarNameInTable="columnNom" msprop:Generator_ColumnPropNameInRow="Nom" msprop:Generator_ColumnPropNameInTable="NomColumn" msprop:Generator_UserColumnName="Nom" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date_Naissance" msprop:Generator_ColumnVarNameInTable="columndate_Naissance" msprop:Generator_ColumnPropNameInRow="date_Naissance" msprop:Generator_ColumnPropNameInTable="date_NaissanceColumn" msprop:Generator_UserColumnName="date_Naissance" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Prenom" msprop:Generator_ColumnVarNameInTable="columnPrenom" msprop:Generator_ColumnPropNameInRow="Prenom" msprop:Generator_ColumnPropNameInTable="PrenomColumn" msprop:Generator_UserColumnName="Prenom" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sexe" msprop:Generator_ColumnVarNameInTable="columnSexe" msprop:Generator_ColumnPropNameInRow="Sexe" msprop:Generator_ColumnPropNameInTable="SexeColumn" msprop:Generator_UserColumnName="Sexe" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cercle_Election" msprop:Generator_ColumnVarNameInTable="columnCercle_Election" msprop:Generator_ColumnPropNameInRow="Cercle_Election" msprop:Generator_ColumnPropNameInTable="Cercle_ElectionColumn" msprop:Generator_UserColumnName="Cercle_Election" type="xs:int" minOccurs="0" />
+              <xs:element name="Commune" msprop:Generator_ColumnVarNameInTable="columnCommune" msprop:Generator_ColumnPropNameInRow="Commune" msprop:Generator_ColumnPropNameInTable="CommuneColumn" msprop:Generator_UserColumnName="Commune" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nom_Bureau_Election" msprop:Generator_ColumnVarNameInTable="columnNom_Bureau_Election" msprop:Generator_ColumnPropNameInRow="Nom_Bureau_Election" msprop:Generator_ColumnPropNameInTable="Nom_Bureau_ElectionColumn" msprop:Generator_UserColumnName="Nom_Bureau_Election" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adresse_bureau" msprop:Generator_ColumnVarNameInTable="columnAdresse_bureau" msprop:Generator_ColumnPropNameInRow="Adresse_bureau" msprop:Generator_ColumnPropNameInTable="Adresse_bureauColumn" msprop:Generator_UserColumnName="Adresse_bureau" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lieux_Bureau" msprop:Generator_ColumnVarNameInTable="columnLieux_Bureau" msprop:Generator_ColumnPropNameInRow="Lieux_Bureau" msprop:Generator_ColumnPropNameInTable="Lieux_BureauColumn" msprop:Generator_UserColumnName="Lieux_Bureau" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Province" msprop:Generator_ColumnVarNameInTable="columnProvince" msprop:Generator_ColumnPropNameInRow="Province" msprop:Generator_ColumnPropNameInTable="ProvinceColumn" msprop:Generator_UserColumnName="Province" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View1" />
+      <xs:field xpath="mstns:Num_Electeur" />
+      <xs:field xpath="mstns:CIN" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
